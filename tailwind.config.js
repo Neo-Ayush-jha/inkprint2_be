@@ -26,11 +26,25 @@ module.exports = {
         'custm-bg-product': '#F9F5ED',
         'custom-bg-card': '#FFFFFF',
         'custom-bg-sproduct': 'rgba(255, 255, 255, 0.5)',
+        'custom-bg-gray': '#ADADAD'
       },
       textColor: {
         'custom-text': '#00A6DB',
         'custom-text-hero': '#AFC40C',
         'custom-text-p': '#444444',
+        'custom-text-grey': '#ADADAD',
+        'custom-text-darkGrey': '#6D6E70',
+        'custom-text-green': '#A7C539',
+        'custom-navbarGrey': '#777777'
+      },
+      borderColor: {
+        'blue': '#00A6DB',
+        'grayLight': '#DDDDDE',
+        'grayMid': '#ADADAD',
+        'green': '#A7C539'
+      },
+      colors: {
+        'shadowGreen': '#AFC40C',
       },
     },
   },

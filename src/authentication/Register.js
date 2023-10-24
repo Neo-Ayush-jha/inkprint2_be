@@ -2,7 +2,7 @@ import React, { useState,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillMail, AiOutlineEye, AiOutlineEyeInvisible ,AiFillLock } from 'react-icons/ai';
 import {ImCross} from 'react-icons/im'
-import Google from '../assets/google_icon.png'
+import Google from '../assets/img/google_icon.png'
 import Login from './Login';
 const Register = ({setShowLogin}) => {
     const [passwordVisible, setPasswordVisible] = useState(false);

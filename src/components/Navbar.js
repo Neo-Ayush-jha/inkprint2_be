@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Logo from '../assets/Logo.png';
-import Search from '../assets/search.png';
-import Phone from '../assets/phone.png';
-import Cart from '../assets/cart.png';
+import Logo from '../assets/img/Logo.png';
+import Search from '../assets/img/search.png';
+import Phone from '../assets/img/phone.png';
+import Cart from '../assets/img/cart.png';
 import Login from '../authentication/Login';
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from '../assets/product2.png'
+import Product from '../assets/img/product2.png'
 
 const ProductCard = (props) => {
   console.log(props.image);

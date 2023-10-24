@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="logo ml-10">
             <img src={Logo} alt="Logo" />
           </div>
-          <div className="search-container flex w-[390px] border-2 h-[35px] items-center justify-center border-solid border-[#ADADAD] mt-6 ml-6 rounded-[25px]">
+          <div className="search-container flex w-[390px] border-[1px] h-[35px] items-center justify-center border-solid border-[#ADADAD] mt-6 ml-6 rounded-[25px]">
             <input type="text" placeholder="Search Product..." className="w-[320px] outline-none bg-none placeholder-[#ADADAD] pr-3" />
             <img src={Search} alt="search" className="w-5 h-5 cursor-pointer" />
           </div>

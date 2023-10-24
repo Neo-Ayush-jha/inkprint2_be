@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Line from '../assets/line2.png'
-import InkLogo from '../assets/inkprintc.png'
-import Insta from '../assets/insta3.png'
-import Face from '../assets/face3.png'
-import You from '../assets/you3.png'
+import Line from '../assets/img/line2.png'
+import InkLogo from '../assets/img/inkprintc.png'
+import Insta from '../assets/img/insta3.png'
+import Face from '../assets/img/face3.png'
+import You from '../assets/img/you3.png'
 import {useNavigate} from 'react-router-dom'
 
 const Footer = () => {

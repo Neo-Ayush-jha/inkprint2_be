@@ -7,7 +7,7 @@ import {
   AiFillLock,
 } from 'react-icons/ai';
 import { ImCross } from 'react-icons/im';
-import Google from '../assets/google_icon.png';
+import Google from '../assets/img/google_icon.png';
 import Register from './Register';
 import Forgot from './Forgot';
 

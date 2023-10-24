@@ -1,5 +1,5 @@
-import WhiteArrow from '../assets/white_arrow.png'
-import Share from '../assets/share_btn.png'
+import WhiteArrow from '../assets/img/white_arrow.png'
+import Share from '../assets/img/share_btn.png'
 const Blogs = () => {
   return (
  <>

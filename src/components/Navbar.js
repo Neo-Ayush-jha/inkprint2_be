@@ -78,7 +78,7 @@ const Navbar = () => {
                 <input placeholder='Search Products...' className='w-full focus:outline-none' />
                 <FiSearch className='text-2xl text-custom-text-grey' />
               </div>
-              <div className={`text-custom-text flex items-center mx-[40px] w-[215px] transition-all ${bulk ? 'hidden' : ''} font-semibold`} onMouseOver={() => setBulk(true)}>
+              <div className={`text-custom-text flex items-center mx-[40px] w-[22vw] transition-all ${bulk ? 'hidden' : ''} font-semibold`} onMouseOver={() => setBulk(true)}>
                 <BsTelephone className='mr-2' />
                 <span>Contact us for bulk order</span>
               </div>
@@ -97,32 +97,32 @@ const Navbar = () => {
         </div>
         <div className='mx-[50px] my-[12px]'>
           <ul className='flex w-full justify-between text-custom-navbarGrey font-medium'>
-            <li className='border-r-2 px-[25px] py-[8px]'>
+            <li className='border-r-2 px-[10px] py-[8px]'>
               <p className='px-[15px] py-[10px] border-b-2 border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center'>
                 All Products
               </p>
             </li>
-            <li className='px-[25px] py-[8px] text-center'>
+            <li className='px-[10px] py-[8px] text-center'>
               <p className='px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center'>
                 Visiting Cards
               </p>
             </li>
-            <li className='px-[25px] py-[8px]'>
+            <li className='px-[10px] py-[8px]'>
               <p className='px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center'>
                 Business Essentials
               </p>
             </li>
-            <li className='px-[25px] py-[8px]'>
+            <li className='px-[10px] py-[8px]'>
               <p className='px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center'>
                 Packaging Printing
               </p>
             </li>
-            <li className='px-[25px] py-[8px]'>
+            <li className='px-[10px] py-[8px]'>
               <p className='px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center'>
                 Marketing essentials
               </p>
             </li>
-            <li className='px-[25px] py-[8px]'>
+            <li className='px-[10px] py-[8px]'>
               <p className='px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center'>
                 Display Product
               </p>

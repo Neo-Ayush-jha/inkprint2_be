@@ -31,7 +31,7 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Box
+  Box,
 } from '@chakra-ui/react'
 
 import { RxTextAlignJustify } from "react-icons/rx";

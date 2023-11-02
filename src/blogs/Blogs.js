@@ -1,8 +1,17 @@
 import WhiteArrow from '../assets/img/white_arrow.png'
 import Share from '../assets/img/share_btn.png'
+import { useEffect } from 'react';
+import PageTopNavigation from '../components/PageTopNavigation';
 const Blogs = () => {
+    useEffect(() => {
+        // This will always scroll the window to top
+        window.scrollTo(0, 0);
+    }, [])
   return (
  <>
+   <div className='ml-10'>
+   <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="Blogs"/>
+   </div>
     <div className="w-[100%]">
         <div className="sorting flex relative">
             <h1 className='text-[#00A6DB] ml-[950px] pt-10 pb-10'>sorting</h1>

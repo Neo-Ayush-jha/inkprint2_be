@@ -45,8 +45,8 @@ function About() {
                 InkPrint stands out as your packaging partner of choice for several compelling reasons. Our unwavering commitment to packaging excellence includes offering a wide array of customizable options to meet your specific packaging needs. We provide versatile business packaging solutions, ensuring that your packaging materials align perfectly with your branding and objectives. Our reliability is unmatched, and we take pride in delivering exceptional customer service throughout your packaging journey. Plus, our cost-effective solutions and flexible payment options make high-quality packaging accessible to businesses of all sizes. Choose InkPrint as your trusted partner to elevate your packaging game.
             </p>
 
-            {/* Sixth Paragraph */}
-            <h4 className="font-medium my-4 md:text-[12px] text-lg mb-24">Customer Testimonials: Hear from Our Satisfied Customers</h4>
+       
+            
 
             {/* Seventh Paragraph */}
             <h4 className="font-medium my-4 md:text-[12px] text-lg">Customization and Consultation: Tailored Solutions for Your Unique Needs</h4>

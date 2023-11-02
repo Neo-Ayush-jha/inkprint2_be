@@ -43,3 +43,7 @@ input[type=password]::-ms-clear
 .mySwiper{
   margin-left: 150px;
 }
+
+.card_image{
+  box-shadow: 0px 2px 8px 0px rgba(0, 166, 219, 0.10), 2px 0px 4px 0px rgba(0, 166, 219, 0.10);
+}

@@ -24,6 +24,7 @@ function GetInTouch() {
                     New Delhi – 110020,
                     India
                 </p>
+                <p>  <a href={"https://maps.app.goo.gl/P1Au7NtprtVs3F2n9"} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm">Open Google Maps</a></p>
 
                 {/* Phone Number */}
                 <span className='text-custom-text-darkGrey mt-[16px]'><span className='text-custom-text-grey'>Phone:</span> <a href="tel:01141327678" className='fit-content'>011 4132 7678</a></span>

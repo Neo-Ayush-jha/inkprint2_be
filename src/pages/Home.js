@@ -20,6 +20,10 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import BannerImage from '../assets/img/Banner.png';
 import ArrowWhite from '../assets/img/WhiteArrow.png'
 import Company from '../assets/img/companys.png'
+import { Link } from 'react-router-dom';
+import WhyInkprint from '../components/WhyInkprint';
+import FindYourFit from '../components/FindYourFit';
+import HappyClients from '../components/HappyClients';
 
 const Home = () => {
   const swiperRef = useRef(null);
@@ -70,14 +74,14 @@ const Home = () => {
     <>
       <div className='hero1 w-[100%]'>
       <div className='flex justify-between md:block '>
-      <div className='banner_image w-[60vh] hidden md:block  md:ml-[100px]'>
-        <img src={BannerImage} className='ml-[100px] md:ml-[200px]  lg:ml-[150px] w-[500px] h-[500px] lg:w-[500px] lg:h-[400px] '/>
+      <div className='banner_image w-[60vh] hidden md:block md:w-[100vh]  sm:w-[30vh] '>
+        <img src={BannerImage} className='ml-[100px] md:ml-[200px]  lg:ml-[150px] w-[500px] h-[500px] lg:w-[500px] lg:h-[400px] ll:ml-[1px] ll:w-[80%]'/>
       </div>
-        <div className='hero-text pl-10 pt-6 pb-5 ml-1 mt-4 w-[50%] md:w-[70vh] lg:w-[100vh]'>
-          <h1 className='text-4xl text-[#000000] md:text-3xl'>Elevate Your Brand with InkPrint: Unleash the Power of <span className='text-custom-text-hero'>Exceptional Packaging Solutions and Design Expertise.</span></h1>
+        <div className='hero-text pl-10 pt-6 pb-5 ml-1 mt-4 w-[50%] md:w-[70vh] lg:w-[100vh] ll:w-[90%] ll:pl-2'>
+          <h1 className='text-4xl text-[#000000] md:text-3xl ll:text-xl'>Elevate Your Brand with InkPrint: Unleash the Power of <span className='text-custom-text-hero'>Exceptional Packaging Solutions and Design Expertise.</span></h1>
        
         
-          <p className='text-[#6D6E70] text-xl pt-10'>Your Brand, Our Box: Crafting Packaging Magic with<br/> InkPrint.</p>
+          <p className='text-[#6D6E70] text-xl pt-10  ll:pt-3'>Your Brand, Our Box: Crafting Packaging Magic with<br/> InkPrint.</p>
 
           <div className='explore_btn mt-[50px]'>
             <button className='w-[200px] h-[40px] bg-custom-btn flex text-white font-medium text-center pt-[6px] pl-[50px] rounded-[4px]'>Explore more <img src={ArrowWhite} className='w-[10px] h-[10px] ml-3 mt-2' /></button>
@@ -124,32 +128,27 @@ const Home = () => {
         </button>
       </div> */}
 
-      <div className='products-wrapper bg-custm-bg-product mt-10 mb-10'>
-       <div className='flex'>
-       <h1 className='pt-10 pl-10 text-3xl text-custom-text-p'>Packaging Printing</h1>
-        <img src={Line} className='w-[420px] h-[2px] mt-[63px] ml-2 md:w-[150px]' alt='line' />
-       </div>
-        <div className='product-wrapper1 flex justify-evenly md:hidden mt-10 '>
-        <ProductCard title="Box packaging" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698136642/gjuclnnqcrbeooz2emxx.png" />
-          
-          <ProductCard title="Carry bags" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822355/prebctmwwxvg0nxjiaiy.png" />
-          <ProductCard title="Packaging tapes" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698136545/bxoc4uhlztsqgirzgkhf.png" />
-        
-        </div>
-        <div className='product-wrapper2 flex justify-evenly md:hidden mt-10'>
-          <ProductCard title="Tissue paper" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822448/wvveiljfvh3xlv5jniio.png" />
-          <ProductCard title="Box packaging" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698136879/aguyadvayl6fs6utpjz9.png" />
-          <ProductCard title="Wrapping paper" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822520/ws1kfrtpssgvpgbcw8kd.png" />
-         
-        </div>
-        <div className='product-wrapper3 flex justify-evenly md:hidden mt-10 '>
-          <ProductCard title="Header cards" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822605/qgkd4u8sxxzmfjaukzv0.png" />
-          <ProductCard title="Product labels" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698137104/rmdmdxm8ybjxjssjeghf.png" />
-          <ProductCard title="Hang Tags" image='http://res.cloudinary.com/brijesh070707/image/upload/v1698822673/ruy9m8rvyxettntxoet2.png' />
-        
-        </div>
-      </div>
-      <div className='w-[100vh] hidden md:block sm:hidden'>
+<div className='products-wrapper bg-custm-bg-product mt-10 mb-10'>
+<div className='flex'>
+<h1 className='pt-10 pl-10 text-3xl text-custom-text-p'>Packaging Printing</h1>
+  <img src={Line} className='w-[420px] h-[2px] mt-[63px] ml-2 md:w-[150px]' alt='line' />
+</div>
+
+  <div className='grid grid-cols-3 ml-10 md:ml-10 md:grid-cols-1 lg:grid-cols-2 sm:grid-col-1 gap-10 mt-10 ll:grid-cols-1'>
+    <ProductCard title="Box packaging" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698136642/gjuclnnqcrbeooz2emxx.png" />
+    <ProductCard title="Carry bags" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822355/prebctmwwxvg0nxjiaiy.png" />
+    <ProductCard title="Packaging tapes" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698136545/bxoc4uhlztsqgirzgkhf.png" />
+    <ProductCard title="Tissue paper" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822448/wvveiljfvh3xlv5jniio.png" />
+    <ProductCard title="Box packaging" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698136879/aguyadvayl6fs6utpjz9.png" />
+    <ProductCard title="Wrapping paper" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822520/ws1kfrtpssgvpgbcw8kd.png" />
+    <ProductCard title="Header cards" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698822605/qgkd4u8sxxzmfjaukzv0.png" />
+    <ProductCard title="Product labels" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698137104/rmdmdxm8ybjxjssjeghf.png" />
+    <ProductCard title="Hang Tags" image='http://res.cloudinary.com/brijesh070707/image/upload/v1698822673/ruy9m8rvyxettntxoet2.png' />
+  </div>
+</div>
+<WhyInkprint/>
+
+      <div className='w-[100vh] hidden md:hidden sm:hidden'>
         <div className='flex justify-center items-center ml-[250px]'>
         <ProductCard title="Box packaging" image="http://res.cloudinary.com/brijesh070707/image/upload/v1698136642/gjuclnnqcrbeooz2emxx.png" />
           
@@ -200,7 +199,19 @@ const Home = () => {
          <Swiper/>
       </div>
 
-
+      <div className='aboutus-hero w-[100%] h-[500px] relative bg-[#E7E1C3] '>
+        <div className='about-wrapp '>
+          <div className='about-wrapper w-[70%]  border-solid border-4 border-[#FFFFFF] top-[50px] md:top-[50px] left-[180px] lg:left-[150px] md:right-[500px] relative rounded-[25px] '>
+            <h2 className='text-[#344054] font-semibold text-xl pt-3 pl-3 lg:pt-10 md:pt-5'>About Us</h2>
+            <p className='pt-3 pl-3 pb-3 pr-3 text-[15px] md:text-[13px] text-[#344054]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life. With a rich history of delivering excellence in digital printing, offset printing, and a wide range of marketing solutions, we have established ourselves as a trusted name in Delhi-NCR. Our commitment to quality, innovation, and customer satisfaction sets us apart. Whether you need eye-catching business marketing materials, immaculate offset prints, or attention-grabbing outdoor advertising, we have the expertise and state-of-the-art technology to make it happen. We pride ourselves on being the go-to printing solution provider in the region, offering versatile printing options, reliability, and cost-effective services. Let us be the bridge between your vision and reality. Choose InkPrint for all your printing needs and experience the difference.</p>
+            <div className='viewmore md:ml-10 flex ml-[700px] lg:ml-[550px] mb-[50px] mt-[30px]  cursor-pointer'>
+             <Link to="/aboutus" className='flex'>
+             <button className='text-[#787878] md:ml-[-150px]'>View more</button><img src={Arrow} className='w-4 h-4 mt-1  ml-2 md:ml-[-150px] md:bg-red-600 md:hidden' alt='arrow' />
+             </Link>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='partners ml-10 mt-[50px] mb-[50px]'>
         <div className='ourpartner flex'>
           <h1 className='text-[#000000] text-2xl font-semibold'>Our Partners</h1>
@@ -218,17 +229,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='aboutus-hero w-[100%] h-[500px] relative bg-[#E7E1C3] '>
-        <div className='about-wrapp '>
-          <div className='about-wrapper w-[70%]  border-solid border-4 border-[#FFFFFF] top-[50px] md:top-[50px] left-[180px] lg:left-[150px] md:right-[500px] relative rounded-[25px] '>
-            <h2 className='text-[#344054] font-semibold text-xl pt-3 pl-3 lg:pt-10 md:pt-5'>About Us</h2>
-            <p className='pt-3 pl-3 pb-3 pr-3 text-[15px] md:text-[13px] text-[#344054]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life. With a rich history of delivering excellence in digital printing, offset printing, and a wide range of marketing solutions, we have established ourselves as a trusted name in Delhi-NCR. Our commitment to quality, innovation, and customer satisfaction sets us apart. Whether you need eye-catching business marketing materials, immaculate offset prints, or attention-grabbing outdoor advertising, we have the expertise and state-of-the-art technology to make it happen. We pride ourselves on being the go-to printing solution provider in the region, offering versatile printing options, reliability, and cost-effective services. Let us be the bridge between your vision and reality. Choose InkPrint for all your printing needs and experience the difference.</p>
-            <div className='viewmore md:ml-10 flex ml-[700px] lg:ml-[550px] mb-[50px] mt-[30px]  cursor-pointer'>
-              <button className='text-[#787878] md:ml-[-150px]'>View more</button><img src={Arrow} className='w-5 h-5  ml-2 md:ml-[-150px] md:bg-red-600 md:hidden' alt='arrow' />
-            </div>
-          </div>
-        </div>
-      </div>
+      <FindYourFit/>
+      <HappyClients/>
     </>
   );
 }

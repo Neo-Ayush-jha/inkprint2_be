@@ -20,6 +20,7 @@ module.exports = {
 
         'sm': {'max': '640px'},
         // => @media (max-width: 639px) { ... }
+        
       },
       backgroundColor: {
         'custom-btn': '#00A6DB',
